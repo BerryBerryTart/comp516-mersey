@@ -11,7 +11,7 @@ def main():
         reader = csv.reader(csvfile, delimiter=',')
         headers = next(reader)
         for row in reader:
-          img.putpixel((int(row[0]), int(row[1])), hexToRGB(row[2]))
+          img.putpixel((int(row[0]), int(row[1])), hexToRGB(row[3]))
     img.show()
 
 
